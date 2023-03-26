@@ -1,4 +1,4 @@
-import random
+import numpy as np
 from time import perf_counter
 
 
@@ -11,7 +11,7 @@ def bubble_sort(list):
     return list
 
 num = int(input("Enter the number of random numbers to sort: "))
-random_list = [random.randint(0, 1000) for x in range(0, num)]
+random_list = np.random.randint(0, 1000, num)
 time_start = perf_counter()
 bubble_sort(random_list)
 time_end = perf_counter()
