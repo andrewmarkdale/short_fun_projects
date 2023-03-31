@@ -1,3 +1,10 @@
+"""
+
+Andrew Mark Dale
+Connect Four game loop
+
+"""
+
 import numpy as np
 from utils import *
 from art import game_art
